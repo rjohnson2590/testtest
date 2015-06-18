@@ -86,7 +86,7 @@ describe('My fake array object', function() {
     }
 
     it('should return 6',function (){
-    	expect(fakeArray.reduce(fold)).to.equal(6)
+    	expect(fakeArray.reduce(fold,0)).to.equal(6)
     })
 
     // it('should return the final element', function() {

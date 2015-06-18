@@ -32,11 +32,11 @@ module.exports = {
     }
   return array
   },
-  reduce: function(callback){
-    var accum;
+  reduce: function(callback,start){
+    var accum= start;
     for(var i=0; i<this.length;i++){
-          callback(accum) 
-          accum =this[i]
+        accum = callback(accum, this[i]) 
+        
           
       }
   return accum;}
